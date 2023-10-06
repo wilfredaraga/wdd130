@@ -30,29 +30,31 @@ p {
 .hero {
     position: relative;
 }
-article img {
-    float: right;
-    position: absolute;
-    width: 10px;
+.hero img {
+    display: block;
+    width: 100%;
     height: auto;
-    top: 10em;
 }
 h1 {
     position: absolute;
     top: 20px;
 }
+article > img {
+    float: right;
+    width: 200px;
+    height: auto;
+    padding: 5px;
+}
 article {
     position: absolute;
     top: 100px;
+    left: 20px;
+    width: 500px;
+    height: auto;
     background-color: #0D1F2D;
 }
 article p{
     color: var(--primary-color);
-}
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
 }
 nav a {
     display: block;
@@ -66,7 +68,7 @@ nav a:link, nav a:visited {
 nav a:hover {
     color: var(--nav-hover-link-color);
 }
-section img {
+section > img {
     width: 200px;
     padding: 10px;
 }
