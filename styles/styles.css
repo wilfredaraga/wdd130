@@ -3,25 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
-main {
-    max-width: 840px;
-}
 aside{
     width: 20rem;
     margin: 1rem;
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 aside h2{
     position: absolute;
+    font-size: 20px;
     top: 15px;
-    left: 105px;
+    left: 120px;
 }
 aside img{
     width: 200px;
     height: auto;
 }
 main img{
-    width: 150px;
+    width: 130px;
     height: auto;
     float: right;
 }
@@ -29,22 +29,41 @@ p {
     padding: 0;
     color: #3B413C;
 }
-footer {
-    margin-top: 1em;
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
     border-top: 1px solid #3B413C;
     text-align: center;
 }
+.grid {
+    display: grid;
+    align-items: center;
+}
 
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
 nav {
     background-color: #3B413C;
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: #DAF0EE;
+    display: block;
+    padding: 0.5rem;
+    font-weight: 300;
+    font-size: 1rem;
+    text-decoration: none;
 }
 h1 {
     color: #3B413C;
+    border-bottom: 1px solid #3B413C;
 }
 
 /* Class Selectors */
