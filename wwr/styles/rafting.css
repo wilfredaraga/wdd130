@@ -18,6 +18,24 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
+header {
+    display: grid;
+    margin: 1rem auto;
+    grid-template-columns: 20% 30% 50%;
+    border-bottom: 1px solid #0D1F2D;
+    max-width: 100%;
+    background-color: var(--accent1-color);
+    justify-items: center;
+}
+.header {
+    grid-column: 3/4;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    align-items: end;
+    width: 400px;
+    font-size: 15px;
+}
 body{
     font-family: var(--paragraph-font);
     max-width: 960px;
@@ -30,7 +48,7 @@ p {
 .hero {
     position: relative;
 }
-.hero img {
+.hero > img {
     display: block;
     width: 100%;
     height: auto;
@@ -38,23 +56,61 @@ p {
 h1 {
     position: absolute;
     top: 20px;
+    left: 5%
 }
 article > img {
     float: right;
     width: 200px;
     height: auto;
-    padding: 5px;
+    padding: 10px;
+    opacity: 100%;
 }
 article {
     position: absolute;
     top: 100px;
-    left: 20px;
-    width: 500px;
+    left: 30px;
+    width: 90%;
     height: auto;
     background-color: #0D1F2D;
+    opacity: 90%;
 }
-article p{
+article > p {
     color: var(--primary-color);
+    padding: 10px;
+    margin: 10px;
+    opacity: 100%;
+}
+.history {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    color: var(--accent1-color);
+}
+.adventure {
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    align-items: center;
+    flex: 100px;
+    width: 100%;
+    text-align: center;
+    color: var(--accent1-color);
+}
+footer {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    justify-content: center;
+    align-items: center;
+}
+footer > p {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--accent1-color);
+}
+.sociallinks {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: space-between;
 }
 nav a {
     display: block;
