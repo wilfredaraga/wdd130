@@ -1,30 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Kaushan+Script&family=Lato&family=Open+Sans&family=Permanent+Marker&family=Poppins&display=swap');
 
 :root {
-    --primary-color: #E4C3AD;
-    --secondary-color: #FAE1DF;
-    --accent1-color: #0D1F2D;
-    --accent2-color: #546A7B;
+    --primary-color: #000000;
+    --secondary-color: #14213D;
+    --accent1-color: #E5E5E5;
+    --accent2-color: #FCA311;
     
     --heading-font: 'Kalam', 'Kaushan Script';
     --paragraph-font: 'Lato', 'Poppins';
     
-    --nav-background-color: #0D1F2D;
-    --nav-link-color: #E4C3AD;
-    --nav-hover-link-color: #9EA3B0;
-    --nav-hover-background-color: #546A7B;
+    --nav-background-color: #FCA311;
+    --nav-link-color: #14213D;
+    --nav-hover-link-color: #E5E5E5;
+    --nav-hover-background-color: #000000;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 header {
     display: grid;
     margin: 1rem auto;
     grid-template-columns: 20% 30% 50%;
-    border-bottom: 1px solid #0D1F2D;
     max-width: 100%;
-    background-color: var(--accent1-color);
+    background-color: var(--nav-background-color);
     justify-items: center;
 }
 .header {
@@ -35,6 +34,7 @@ header {
     align-items: end;
     width: 400px;
     font-size: 15px;
+    color: var(--secondary-color);
 }
 body{
     font-family: var(--paragraph-font);
@@ -42,11 +42,12 @@ body{
     padding: 20px;
 }
 p {
-    padding: 25px;
-    color: var(--accent1-color);
+    padding: 15px;
+    color: var(--primary-color);
 }
 .hero {
     position: relative;
+    color: var(--secondary-color);
 }
 .hero > img {
     display: block;
@@ -56,35 +57,50 @@ p {
 h1 {
     position: absolute;
     top: 20px;
-    left: 5%
+    left: 5%;
+    color: var(--accent2-color);
 }
-article > img {
+.about > img {
     float: right;
     width: 200px;
     height: auto;
     padding: 10px;
     opacity: 100%;
 }
-article {
+.about {
     position: absolute;
     top: 100px;
     left: 30px;
     width: 90%;
     height: auto;
-    background-color: #0D1F2D;
+    background-color: var(--nav-hover-link-color);
     opacity: 90%;
 }
-article > p {
+.about > p {
     color: var(--primary-color);
     padding: 10px;
     margin: 10px;
     opacity: 100%;
 }
+.contact {
+    color: var(--primary-color);
+    padding: 15px;
+    margin: 20px;
+    width: 90%;
+    height: auto;
+    border: 1px solid var(--accent2-color);
+}
+iframe {
+    width: 400px;
+    height: 350px;
+    border: 1px solid var(--accent2-color);
+}
 .history {
     display: flex;
     width: 100%;
     padding: 10px;
-    color: var(--accent1-color);
+    color: var(--primary-color);
+    background-color: var(--nav-hover-link-color);
 }
 .adventure {
     display: flex;
@@ -94,7 +110,47 @@ article > p {
     flex: 100px;
     width: 100%;
     text-align: center;
-    color: var(--accent1-color);
+    color: var(--primary-color);
+    background-color: var(--nav-hover-link-color);
+}
+.employee {
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    align-items: center;
+    flex: 100px;
+    width: 100%;
+    text-align: center;
+}
+.employeesection{
+    background-color: var(--nav-hover-link-color);
+    color: var(--primary-color);
+    padding: 5px;
+    margin: 15px;
+}
+form {
+    width: 650px;
+    margin: 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: grid;
+    align-items: center;
+    background-color: var(--nav-hover-link-color);
+}
+label {
+    padding: 10px;
+    margin: 10px;
+}
+.button {
+    margin: 1rem;
+    background-color: var(--accent2-color);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    width: 300px;
+}
+.button:hover {
+    background-color: var(--accent1-color);
 }
 footer {
     display: grid;
@@ -105,7 +161,7 @@ footer {
 footer > p {
     display: flex;
     justify-content: flex-end;
-    color: var(--accent1-color);
+    color: var(--primary-color);
 }
 .sociallinks {
     grid-column: 2/3;
@@ -118,8 +174,8 @@ nav a {
     text-decoration: none;
     padding: 1rem;
 }
-nav a:link, nav a:visited {
-    color: var(--nav-link-color);
+nav a:visited {
+    color: var(--nav-hover-background-color);
 }
 nav a:hover {
     color: var(--nav-hover-link-color);

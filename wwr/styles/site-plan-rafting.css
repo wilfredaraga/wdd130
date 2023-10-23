@@ -2,18 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Kaushan+Script&family=Lato&family=Open+Sans&family=Permanent+Marker&family=Poppins&display=swap');
 
 :root {
-    --primary-color: #E4C3AD;
-    --secondary-color: #FAE1DF;
-    --accent1-color: #0D1F2D;
-    --accent2-color: #546A7B;
+    --primary-color: #000000;
+    --secondary-color: #14213D;
+    --accent1-color: #E5E5E5;
+    --accent2-color: #FCA311;
     
     --heading-font: 'Kalam', 'Kaushan Script';
     --paragraph-font: 'Lato', 'Poppins';
     
-    --nav-background-color: #0D1F2D;
-    --nav-link-color: #E4C3AD;
-    --nav-hover-link-color: #9EA3B0;
-    --nav-hover-background-color: #546A7B;
+    --nav-background-color: #FCA311;
+    --nav-link-color: #14213D;
+    --nav-hover-link-color: #E5E5E5;
+    --nav-hover-background-color: #000000;
 }
 
 body{
@@ -23,32 +23,30 @@ body{
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
-div {
-    color: var(--accent2-color);
-}
-
 header {
     padding: 20px;
-    background-color: var(--accent1-color);
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
 }
 p {
     padding: 25px;
+    color: var(--primary-color);
 }
 nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
 }
-nav a {
+nav a, a {
     display: block;
     color: var(--nav-link-color);
     text-decoration: none;
     padding: 1rem;
 }
-nav a:link, nav a:visited {
-    color: var(--nav-link-color);
+nav a:visited {
+    color: var(--nav-hover-background-color-color);
 }
 nav a:hover {
     color: var(--nav-hover-link-color);
