@@ -17,6 +17,7 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
+    padding: 10px;
 }
 header {
     display: grid;
@@ -25,16 +26,19 @@ header {
     max-width: 100%;
     background-color: var(--nav-background-color);
     justify-items: center;
+    align-items: end;
+    color: var(--secondary-color);
 }
 .header {
     grid-column: 3/4;
     display: flex;
-    justify-items: center;
     justify-content: space-between;
-    align-items: end;
     width: 400px;
     font-size: 15px;
-    color: var(--secondary-color);
+}
+.call {
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
 body{
     font-family: var(--paragraph-font);
@@ -113,6 +117,30 @@ iframe {
     color: var(--primary-color);
     background-color: var(--nav-hover-link-color);
 }
+.gridtrips {
+    display: grid;
+    grid-template: 150px 1fr/ 1fr 3fr;
+    width: 100%;
+    border: 1px solid var(--accent2-color);
+}
+.h2trips {
+    grid-column: 1/3;
+    align-self: center;
+}
+.tabletrips {
+    background-color: var(--accent1-color);
+    margin: 20px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 15px;
+}
+.trips > p {
+    font-size: medium;
+}
+figcaption {
+    color: var(--secondary-color);
+    font-size: large;
+}
 .employee {
     display: flex;
     justify-content: space-between;
@@ -150,7 +178,7 @@ label {
     width: 300px;
 }
 .button:hover {
-    background-color: var(--accent1-color);
+    background-color: var(--nav-link-color);
 }
 footer {
     display: grid;
