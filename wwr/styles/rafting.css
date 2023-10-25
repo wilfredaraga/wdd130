@@ -39,6 +39,7 @@ header {
 .call {
     grid-column: 2/3;
     grid-row: 1/2;
+    font-size: x-large;
 }
 body{
     font-family: var(--paragraph-font);
